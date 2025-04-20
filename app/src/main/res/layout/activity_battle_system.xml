@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#000000">
+
+    <TextView
+        android:id="@+id/txtBattleTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BATTLE"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="8dp"
+        android:background="#FF5722"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imgPlayerLutemon"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:contentDescription="Player Lutemon"/>
+
+            <TextView
+                android:id="@+id/txtPlayerStats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Player Stats"
+                android:textSize="12sp"
+                android:background="#333333"
+                android:textColor="#FFFFFF"
+                android:padding="4dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VS"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:padding="8dp"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imgEnemyLutemon"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:contentDescription="Enemy Lutemon"/>
+
+            <TextView
+                android:id="@+id/txtEnemyStats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enemy Stats"
+                android:textSize="12sp"
+                android:background="#333333"
+                android:textColor="#FFFFFF"
+                android:padding="4dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Battle Log"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp"/>
+
+    <ScrollView
+        android:id="@+id/scrollBattleLog"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#222222">
+
+        <TextView
+            android:id="@+id/txtBattleLog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"/>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/btnAttack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Attack"
+            android:textSize="16sp"
+            android:backgroundTint="#FF5722"
+            android:layout_marginEnd="4dp"/>
+
+        <Button
+            android:id="@+id/btnDefend"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Defend"
+            android:textSize="16sp"
+            android:backgroundTint="#2196F3"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"/>
+
+        <Button
+            android:id="@+id/btnPowerUp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Power Up"
+            android:textSize="16sp"
+            android:backgroundTint="#4CAF50"
+            android:layout_marginStart="4dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnEndBattle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Forfeit Battle"
+        android:backgroundTint="#9C27B0"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>

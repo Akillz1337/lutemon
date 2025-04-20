@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LUTEMON BATTLE"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="#6200EE"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:id="@+id/txtHomeCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="You have 0 Lutemons at home"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btnViewHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Home"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/txtTrainingCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="You have 0 Lutemons training"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btnViewTraining"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Training Area"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/txtBattleCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="You have 0 Lutemons ready for battle"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btnViewBattle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Battle Arena"
+        android:layout_marginBottom="32dp"/>
+
+    <Button
+        android:id="@+id/btnCreateNew"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create New Lutemon"
+        android:backgroundTint="#4CAF50"/>
+
+</LinearLayout>

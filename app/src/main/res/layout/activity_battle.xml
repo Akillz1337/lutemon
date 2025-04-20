@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Battle Arena"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="#6200EE"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/txtNoLutemons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No Lutemons in battle arena"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginBottom="16dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/btnStartBattle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Battle Against Enemy"
+        android:enabled="false"
+        android:backgroundTint="#FF5722"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>

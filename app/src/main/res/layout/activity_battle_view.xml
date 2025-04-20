@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BATTLE"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="#FF5722"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imgLutemon1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:contentDescription="Lutemon 1"/>
+
+            <TextView
+                android:id="@+id/txtLutemon1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lutemon 1"
+                android:textSize="14sp"
+                android:background="#E0E0E0"
+                android:padding="8dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VS"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="8dp"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imgLutemon2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:contentDescription="Lutemon 2"/>
+
+            <TextView
+                android:id="@+id/txtLutemon2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lutemon 2"
+                android:textSize="14sp"
+                android:background="#E0E0E0"
+                android:padding="8dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#EEEEEE">
+
+        <TextView
+            android:id="@+id/txtBattleLog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textSize="14sp"/>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/btnNextAttack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Next Attack"
+            android:backgroundTint="#FF5722"
+            android:layout_marginEnd="4dp"/>
+
+        <Button
+            android:id="@+id/btnEndBattle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="End Battle"
+            android:layout_marginStart="4dp"/>
+    </LinearLayout>
+</LinearLayout>
